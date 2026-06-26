@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com Fernando Rolon.">
+  <title>Contato | Fernando Rolon</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Página inicial">
+        <span class="logo-mark">FR</span>
+        <span class="logo-text">Fernando Rolon</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu de navegação">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Sobre mim</a></li>
+          <li><a href="formacao.html" class="nav-link">Formação</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+          <li><a href="contato.html" class="nav-link active" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro ou escuro">
+        <span class="theme-icon theme-icon-light" aria-hidden="true">☀</span>
+        <span class="theme-icon theme-icon-dark" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Contato</h1>
+        <p>Preencha o formulário abaixo. Todos os campos são obrigatórios.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <aside class="contact-info card">
+          <h2>Vamos conversar?</h2>
+          <p>
+            Estou aberto a oportunidades de estágio, projetos colaborativos e
+            troca de conhecimento sobre desenvolvimento web.
+          </p>
+          <ul class="contact-details">
+            <li>
+              <strong>E-mail:</strong>
+              <a href="mailto:elyemdigital@gmail.com">elyemdigital@gmail.com</a>
+            </li>
+            <li>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/FernandoRolonRU5480032" target="_blank" rel="noopener noreferrer">
+                @FernandoRolonRU5480032
+              </a>
+            </li>
+            <li>
+              <strong>Local:</strong> Brasil
+            </li>
+          </ul>
+        </aside>
+
+        <div class="contact-form-wrapper card">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name">
+              <span class="error-message" id="errorNome" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="usuario@dominio.com" autocomplete="email">
+              <span class="error-message" id="errorEmail" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..."></textarea>
+              <span class="error-message" id="errorMensagem" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-overlay hidden" id="successModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Fechar modal">&times;</button>
+      <div class="modal-icon" aria-hidden="true">✓</div>
+      <h2 id="modalTitle">Mensagem enviada com sucesso!</h2>
+      <p>Obrigado pelo contato. Responderei em breve.</p>
+      <button class="btn btn-primary" id="modalOk" type="button">Entendi</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Fernando Rolon · RU5480032</p>
+      <p class="footer-note">Portfólio desenvolvido com HTML5, CSS3 e JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

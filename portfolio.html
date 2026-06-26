@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projetos e trabalhos desenvolvidos por Fernando Rolon.">
+  <title>Portfólio | Fernando Rolon</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Página inicial">
+        <span class="logo-mark">FR</span>
+        <span class="logo-text">Fernando Rolon</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu de navegação">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Sobre mim</a></li>
+          <li><a href="formacao.html" class="nav-link">Formação</a></li>
+          <li><a href="portfolio.html" class="nav-link active" aria-current="page">Portfólio</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro ou escuro">
+        <span class="theme-icon theme-icon-light" aria-hidden="true">☀</span>
+        <span class="theme-icon theme-icon-dark" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Portfólio</h1>
+        <p>Seleção de projetos desenvolvidos durante meus estudos e prática autodidata.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Filtrar projetos por categoria">
+          <button class="filter-btn active" type="button" data-filter="todos">Todos</button>
+          <button class="filter-btn" type="button" data-filter="web">Web</button>
+          <button class="filter-btn" type="button" data-filter="logica">Lógica</button>
+          <button class="filter-btn" type="button" data-filter="dados">Dados</button>
+        </div>
+
+        <div class="cards-grid two-cols" id="projectGrid">
+          <article class="card project-card" data-category="web">
+            <div class="project-badge">Web</div>
+            <h3>Portfólio Pessoal</h3>
+            <p>
+              Site de currículo online com navegação multi-página, tema claro/escuro,
+              menu responsivo e formulário de contato com validação JavaScript.
+            </p>
+            <ul class="tag-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+            <a href="https://github.com/FernandoRolonRU5480032/portfolio-fernando-rolon" class="project-link" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub ↗
+            </a>
+          </article>
+
+          <article class="card project-card" data-category="web">
+            <div class="project-badge">Web</div>
+            <h3>Landing Page Responsiva</h3>
+            <p>
+              Página institucional fictícia para uma startup de tecnologia, com layout
+              em grid CSS, animações sutis e design mobile-first.
+            </p>
+            <ul class="tag-list">
+              <li>HTML5</li>
+              <li>CSS Grid</li>
+              <li>Flexbox</li>
+            </ul>
+            <a href="https://github.com/FernandoRolonRU5480032/landing-page-responsiva" class="project-link" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub ↗
+            </a>
+          </article>
+
+          <article class="card project-card" data-category="logica">
+            <div class="project-badge">Lógica</div>
+            <h3>Calculadora de Médias Escolares</h3>
+            <p>
+              Aplicação em JavaScript que calcula médias ponderadas, verifica aprovação
+              e exibe feedback visual conforme o resultado.
+            </p>
+            <ul class="tag-list">
+              <li>JavaScript</li>
+              <li>DOM</li>
+              <li>Validação</li>
+            </ul>
+            <a href="https://github.com/FernandoRolonRU5480032/calculadora-medias" class="project-link" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub ↗
+            </a>
+          </article>
+
+          <article class="card project-card" data-category="dados">
+            <div class="project-badge">Dados</div>
+            <h3>Sistema de Cadastro com SQL</h3>
+            <p>
+              Modelagem de banco relacional para cadastro de clientes, com scripts SQL
+              de criação, inserção e consultas avançadas.
+            </p>
+            <ul class="tag-list">
+              <li>MySQL</li>
+              <li>SQL</li>
+              <li>Modelagem</li>
+            </ul>
+            <a href="https://github.com/FernandoRolonRU5480032/cadastro-sql" class="project-link" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub ↗
+            </a>
+          </article>
+
+          <article class="card project-card" data-category="web">
+            <div class="project-badge">Web</div>
+            <h3>Galeria de Fotos Interativa</h3>
+            <p>
+              Galeria com lightbox feito em JavaScript puro, permitindo navegar entre
+              imagens e fechar com tecla Escape.
+            </p>
+            <ul class="tag-list">
+              <li>JavaScript</li>
+              <li>CSS3</li>
+              <li>Eventos</li>
+            </ul>
+            <a href="https://github.com/FernandoRolonRU5480032/galeria-fotos" class="project-link" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub ↗
+            </a>
+          </article>
+
+          <article class="card project-card" data-category="logica">
+            <div class="project-badge">Lógica</div>
+            <h3>Jogo da Velha</h3>
+            <p>
+              Jogo para dois jogadores com detecção automática de vitória, empate e
+              botão de reinício — desenvolvido para praticar lógica e manipulação do DOM.
+            </p>
+            <ul class="tag-list">
+              <li>JavaScript</li>
+              <li>Lógica</li>
+              <li>DOM</li>
+            </ul>
+            <a href="https://github.com/FernandoRolonRU5480032/jogo-da-velha" class="project-link" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub ↗
+            </a>
+          </article>
+        </div>
+
+        <p class="empty-message hidden" id="emptyProjects" role="status">
+          Nenhum projeto encontrado nesta categoria.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Fernando Rolon · RU5480032</p>
+      <p class="footer-note">Portfólio desenvolvido com HTML5, CSS3 e JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
