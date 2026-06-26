@@ -1,6 +1,6 @@
 # Portfólio Pessoal — Fernando Rolon
 
-Currículo online desenvolvido com **HTML5**, **CSS3** e **JavaScript puro** (sem frameworks).
+Currículo online desenvolvido com **HTML5**, **CSS3** e **JavaScript
 
 **Matrícula:** RU5480032
 
@@ -52,6 +52,4 @@ portfolio-fernando-rolon/
 └── README.md
 ```
 
-## Como testar localmente
 
-Abra o arquivo `index.html` diretamente no navegador ou use a extensão **Live Server** no VS Code.
