@@ -2,8 +2,6 @@
 
 Currículo online desenvolvido com **HTML5**, **CSS3** e **JavaScript**
 
-**Matrícula:** RU5480032
-
 ## Páginas
 
 | Página | Arquivo | Descrição |
