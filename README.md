@@ -1,6 +1,6 @@
 # Portfólio Pessoal — Fernando Rolon
 
-Currículo online desenvolvido com **HTML5**, **CSS3** e **JavaScript
+Currículo online desenvolvido com **HTML5**, **CSS3** e **JavaScript**
 
 **Matrícula:** RU5480032
 
@@ -21,20 +21,6 @@ Currículo online desenvolvido com **HTML5**, **CSS3** e **JavaScript
 - Simulação de envio com modal de confirmação
 - Filtro de projetos por categoria na página Portfólio
 
-## Publicar no GitHub Pages
-
-1. Crie um repositório público no GitHub chamado `portfolio-fernando-rolon`
-2. Envie os arquivos deste projeto para o repositório
-3. Vá em **Settings → Pages**
-4. Em **Source**, selecione a branch `main` e a pasta `/ (root)`
-5. Salve — em alguns minutos o site estará disponível em:
-
-```
-https://fernandorolonru5480032.github.io/portfolio-fernando-rolon/
-```
-
-> **Importante:** substitua `fernandorolonru5480032` pelo seu usuário exato do GitHub, se for diferente.
-
 ## Estrutura de arquivos
 
 ```
@@ -50,6 +36,15 @@ portfolio-fernando-rolon/
 │   ├── contact.js
 │   └── portfolio.js
 └── README.md
+├── images/
+          ├── projeto-portfolio.png
+          ├── projeto-landing-page.png
+          ├── projeto-calculadora-medias.png
+          ├── projeto-cadastro-sql.png
+          ├── projeto-galeria-fotos.png
+          ├── projeto-jogo-da-velha.png
+
+          
 ```
 
 
