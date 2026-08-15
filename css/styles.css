@@ -128,16 +128,13 @@ ul {
   font-weight: 700;
 }
 
-.logo-mark {
-  display: grid;
-  place-items: center;
+.logo-photo {
   width: 40px;
   height: 40px;
-  background: var(--color-primary);
-  color: #fff;
-  border-radius: 10px;
-  font-size: 0.85rem;
-  font-weight: 800;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-primary);
+  flex-shrink: 0;
 }
 
 .logo-text {
@@ -287,6 +284,14 @@ body.dark-theme .theme-icon-dark {
   display: grid;
   place-items: center;
   padding: 4px;
+}
+
+.avatar-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--color-surface);
 }
 
 .avatar-circle {
